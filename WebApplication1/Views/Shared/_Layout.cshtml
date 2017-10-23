@@ -58,9 +58,9 @@ desired effect
             <!-- Logo -->
             <a href="index2.html" class="logo">
                 <!-- mini logo for sidebar mini 50x50 pixels -->
-                <span class="logo-mini"><b>A</b>LT</span>
+                <span class="logo-mini"><b>PV</b>CRM</span>
                 <!-- logo for regular state and mobile devices -->
-                <span class="logo-lg"><b>Admin</b>LTE</span>
+                <span class="logo-lg"><b>Parcel</b>VISION CRM</span>
             </a>
             <!-- Header Navbar -->
             <nav class="navbar navbar-static-top" role="navigation">
@@ -96,7 +96,7 @@ desired effect
                                                     <small><i class="fa fa-clock-o"></i> 5 mins</small>
                                                 </h4>
                                                 <!-- The message -->
-                                                <p>Why not buy a new awesome theme?</p>
+                                                <p>Sample Layout for PVCRM?</p>
                                             </a>
                                         </li>
                                         <!-- end message -->
@@ -148,7 +148,7 @@ desired effect
                                             <a href="#">
                                                 <!-- Task title and progress text -->
                                                 <h3>
-                                                    Design some buttons
+                                                    Completed Tasks or Reports
                                                     <small class="pull-right">20%</small>
                                                 </h3>
                                                 <!-- The progress bar -->
@@ -176,14 +176,14 @@ desired effect
                                 <!-- The user image in the navbar-->
                                 <img src="/dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
                                 <!-- hidden-xs hides the username on small devices so only the image appears. -->
-                                <span class="hidden-xs">Alexander Pierce</span>
+                                <span class="hidden-xs">Vaibhav Agarwal</span>
                             </a>
                             <ul class="dropdown-menu">
                                 <!-- The user image in the menu -->
                                 <li class="user-header">
                                     <img src="/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
                                     <p>
-                                        Alexander Pierce - Web Developer
+                                        Vaibhav Agarwal - Web UI Developer
                                         <small>Member since Nov. 2012</small>
                                     </p>
                                 </li>
@@ -231,7 +231,7 @@ desired effect
                         <img src="/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
                     </div>
                     <div class="pull-left info">
-                        <p>Alexander Pierce</p>
+                        <p>Vaibhav Agarwal</p>
                         <!-- Status -->
                         <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
                     </div>
@@ -250,20 +250,35 @@ desired effect
                 <!-- /.search form -->
                 <!-- Sidebar Menu -->
                 <ul class="sidebar-menu" data-widget="tree">
-                    <li class="header">HEADER</li>
+                    <li class="header">Side Menu HEADER</li>
                     <!-- Optionally, you can add icons to the links -->
-                    <li class="active"><a href="#"><i class="fa fa-link"></i> <span>Link</span></a></li>
-                    <li><a href="#"><i class="fa fa-link"></i> <span>Another Link</span></a></li>
+                    <li><a href="/" class="custom-non-expandable" id="sidebar-menu-commission-person"><i class="fa fa-user"></i> <span>Commission Person</span></a></li>
+                    <li><a href="/" class="custom-non-expandable" id="sidebar-menu-commission-team"><i class="fa fa-users"></i> <span>Commission Team</span></a></li>
+                    <li><a href="/" class="custom-non-expandable" id="sidebar-menu-commission-setting"><i class="fa fa-cogs"></i> <span>Settings</span></a></li>
                     <li class="treeview">
                         <a href="#">
-                            <i class="fa fa-link"></i> <span>Multilevel</span>
+                            <i class="fa fa-link"></i><span>Revenue Reports (Expand)</span>
                             <span class="pull-right-container">
                                 <i class="fa fa-angle-left pull-right"></i>
                             </span>
                         </a>
                         <ul class="treeview-menu">
-                            <li><a href="#">Link in level 2</a></li>
-                            <li><a href="#">Link in level 2</a></li>
+                            <li><a href="/" class="custom-expandable1" id="sidebar-menu-expandable1-parcelhero">ParcelHero</a></li>
+                            <li><a href="/" class="custom-expandable1" id="sidebar-menu-expandable1-deliverplus">DeliverPlus</a></li>
+                            <li><a href="/" class="custom-expandable1" id="sidebar-menu-expandable1-fastlane">FastLane</a></li>
+                        </ul>
+                    </li>
+                    <li class="treeview">
+                        <a href="#">
+                            <i class="fa fa-joomla"></i><span>UI Samples</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="/Home/SampleBoxTable" class="custom-expandable1" id="sidebar-menu-expandable1-NormalTable">Normal Table</a></li>
+                            <li><a href="/Home/MagicInfoBoxes" class="custom-expandable1" id="sidebar-menu-expandable1-InfoBoxes">Info Boxes</a></li>
+
                         </ul>
                     </li>
                 </ul>
@@ -276,8 +291,8 @@ desired effect
             <!-- Content Header (Page header) -->
             <section class="content-header">
                 <h1>
-                    Page Header
-                    <small>Optional description</small>
+                    Main Page Header
+                    <small>Main Optional description</small>
                 </h1>
                 <ol class="breadcrumb">
                     <li><a href="#"><i class="fa fa-dashboard"></i> Level</a></li>
@@ -384,5 +399,69 @@ desired effect
     <!-- Optionally, you can add Slimscroll and FastClick plugins.
          Both of these plugins are recommended to enhance the
          user experience. -->
+    @if (false)
+    {
+    <script src="~/Scripts/jquery-3.2.1.js"></script>
+    }
+<script>
+    $(document).ready(function () {
+        
+        var globalLastClickedAnchor = {
+            isExpandable: false,
+            selectorId: ""
+        };
+
+        if (localStorage.getItem("objAnchorState") === null)
+        {
+            //Do Nothing!
+        }
+        else
+        {
+            globalLastClickedAnchor = JSON.parse(localStorage.getItem("objAnchorState"));
+
+            if (globalLastClickedAnchor.isExpandable == true)
+            {
+                $("#" + globalLastClickedAnchor.selectorId).closest(".treeview").addClass("menu-open");
+                $("#" + globalLastClickedAnchor.selectorId).closest(".treeview").find(".treeview-menu").css("display", "block");
+                $("#" + globalLastClickedAnchor.selectorId).closest("li").addClass("active");
+            }
+            else
+            {
+                $("#" + globalLastClickedAnchor.selectorId).closest("li").addClass("active");
+            }
+
+        }
+
+        $(".sidebar-menu li a").click(function () {
+
+            var $anchor = $(this);
+
+            if ($anchor.closest(".menu-open").length > 0) {
+                console.log("Expandable Node - " + $anchor.attr("id"));
+                globalLastClickedAnchor.isExpandable = true;
+            }
+            else {
+                globalLastClickedAnchor.isExpandable = false;
+                console.log("Non Expandable Node - " + $anchor.attr("id"));
+            }
+
+            if ($anchor.attr("id") === undefined || $anchor.attr("id") == "undefined" || $anchor.attr("id") == "") {
+                //Save Nothing
+            }
+            else {
+                globalLastClickedAnchor.selectorId = $anchor.attr("id");
+                localStorage.setItem("objAnchorState", JSON.stringify(globalLastClickedAnchor));
+                console.log(localStorage.getItem("objAnchorState"));
+            }
+
+        });
+
+
+
+    });
+
+  
+
+</script>
 </body>
 </html>

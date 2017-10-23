@@ -1,0 +1,154 @@
+﻿
+@{
+    ViewBag.Title = "SampleBoxTable";
+}
+    <div class="row">
+        <div class="col-xs-12 text-center">
+            Example of Box and Table
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="box">
+                <div class="box-header">
+                    <h3 class="box-title">Responsive Hover Table</h3>
+
+                    <div class="box-tools">
+                        <div class="input-group input-group-sm" style="width: 150px;">
+                            <input type="text" name="table_search" class="form-control pull-right" placeholder="Search">
+
+                            <div class="input-group-btn">
+                                <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.box-header -->
+                <div class="box-body table-responsive no-padding">
+                    <table class="table table-hover">
+                        <tbody>
+                            <tr>
+                                <th>ID</th>
+                                <th>User</th>
+                                <th>Date</th>
+                                <th>Status</th>
+                                <th>Reason</th>
+                            </tr>
+                            <tr>
+                                <td>183</td>
+                                <td>John Doe</td>
+                                <td>11-7-2014</td>
+                                <td><span class="label label-success">Approved</span></td>
+                                <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
+                            </tr>
+                            <tr>
+                                <td>219</td>
+                                <td>Alexander Pierce</td>
+                                <td>11-7-2014</td>
+                                <td><span class="label label-warning">Pending</span></td>
+                                <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
+                            </tr>
+                            <tr>
+                                <td>657</td>
+                                <td>Bob Doe</td>
+                                <td>11-7-2014</td>
+                                <td><span class="label label-primary">Approved</span></td>
+                                <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
+                            </tr>
+                            <tr>
+                                <td>175</td>
+                                <td>Mike Doe</td>
+                                <td>11-7-2014</td>
+                                <td><span class="label label-danger">Denied</span></td>
+                                <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- /.box-body -->
+            </div>
+            <!-- /.box -->
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            Normal Box Body
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="box box-solid box-primary">
+                <div class="box-header with-border">
+                    <h3 class="box-title">Default Box Example</h3>
+                    <div class="box-tools pull-right">
+                        <!-- Buttons, labels, and many other things can be placed here! -->
+                        <!-- Here is a label for example -->
+                        <span class="label label-primary">Label</span>
+                    </div>
+                    <!-- /.box-tools -->
+                </div>
+                <!-- /.box-header -->
+                <div class="box-body">
+                    The body of the box
+                </div>
+                <!-- /.box-body -->
+                <div class="box-footer">
+                    The footer of the box
+                </div>
+                <!-- box-footer -->
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            More Examples
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-6">
+            <div class="box box-primary" data-widget="box-widget">
+                <div class="box-header">
+                    <h3 class="box-title">Box Tools</h3>
+                    <div class="box-tools">
+                        <button class="btn btn-box-tool" data-toggle="tooltip" title="Test" data-vibs="1"><i class="fa fa-window-restore"></i></button>
+                        <button class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip" title="Collapse"><i class="fa fa-minus"></i></button>                        
+                    </div>
+                </div>
+                <div class="box-body">
+                    The body of the box
+                    <p></p><p></p><p></p><p><input type="button" value="Trigger Loading" onclick="$('#x1 .overlay').show()"/></p>
+                    <p><input type="button" value="Cancel Loading" onclick="$('#x1 .overlay').hide()" /></p>
+
+                </div>
+
+                <div class="box-footer">
+                    <p></p>The footer of the box
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-6">
+            <div class="box box-primary" data-widget="box-widget" id="x1">
+                <div class="box-header">
+                    <h3 class="box-title">Target Box</h3>
+                    <div class="box-tools">
+                        <button class="btn btn-box-tool" data-toggle="tooltip" title="Test" data-vibs="1"><i class="fa fa-window-restore"></i></button>
+                        <button class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip" title="Collapse"><i class="fa fa-minus"></i></button>
+                    </div>
+                </div>
+                <div class="box-body">
+                    The body of the box
+                    <div style="height:80px"></div>
+                </div>
+
+                <div class="box-footer">
+                    <p></p>The footer of the box
+                </div>
+
+                <div class="overlay">
+                    <i class="fa fa-refresh fa-spin"></i>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
