@@ -252,22 +252,6 @@ desired effect
                 <ul class="sidebar-menu" data-widget="tree">
                     <li class="header">Side Menu HEADER</li>
                     <!-- Optionally, you can add icons to the links -->
-                    <li><a href="/" class="custom-non-expandable" id="sidebar-menu-commission-person"><i class="fa fa-user"></i> <span>Commission Person</span></a></li>
-                    <li><a href="/" class="custom-non-expandable" id="sidebar-menu-commission-team"><i class="fa fa-users"></i> <span>Commission Team</span></a></li>
-                    <li><a href="/" class="custom-non-expandable" id="sidebar-menu-commission-setting"><i class="fa fa-cogs"></i> <span>Settings</span></a></li>
-                    <li class="treeview">
-                        <a href="#">
-                            <i class="fa fa-link"></i><span>Revenue Reports (Expand)</span>
-                            <span class="pull-right-container">
-                                <i class="fa fa-angle-left pull-right"></i>
-                            </span>
-                        </a>
-                        <ul class="treeview-menu">
-                            <li><a href="/" class="custom-expandable1" id="sidebar-menu-expandable1-parcelhero">ParcelHero</a></li>
-                            <li><a href="/" class="custom-expandable1" id="sidebar-menu-expandable1-deliverplus">DeliverPlus</a></li>
-                            <li><a href="/" class="custom-expandable1" id="sidebar-menu-expandable1-fastlane">FastLane</a></li>
-                        </ul>
-                    </li>
                     <li class="treeview">
                         <a href="#">
                             <i class="fa fa-joomla"></i><span>UI Samples</span>
@@ -281,6 +265,23 @@ desired effect
 
                         </ul>
                     </li>
+                    <li><a href="/Home/UnderConstruction" class="custom-non-expandable" id="sidebar-menu-commission-person"><i class="fa fa-user"></i> <span>Commission Person</span></a></li>
+                    <li><a href="/Home/UnderConstruction" class="custom-non-expandable" id="sidebar-menu-commission-team"><i class="fa fa-users"></i> <span>Commission Team</span></a></li>
+                    <li><a href="/Home/UnderConstruction" class="custom-non-expandable" id="sidebar-menu-commission-setting"><i class="fa fa-cogs"></i> <span>Settings</span></a></li>
+                    <li class="treeview">
+                        <a href="#">
+                            <i class="fa fa-link"></i><span>Revenue Reports (Expand)</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="/Home/UnderConstruction" class="custom-expandable1" id="sidebar-menu-expandable1-parcelhero">ParcelHero</a></li>
+                            <li><a href="/Home/UnderConstruction" class="custom-expandable1" id="sidebar-menu-expandable1-deliverplus">DeliverPlus</a></li>
+                            <li><a href="/Home/UnderConstruction" class="custom-expandable1" id="sidebar-menu-expandable1-fastlane">FastLane</a></li>
+                        </ul>
+                    </li>
+                    
                 </ul>
                 <!-- /.sidebar-menu -->
             </section>
@@ -423,13 +424,9 @@ desired effect
             {
                 $("#" + globalLastClickedAnchor.selectorId).closest(".treeview").addClass("menu-open");
                 $("#" + globalLastClickedAnchor.selectorId).closest(".treeview").find(".treeview-menu").css("display", "block");
-                $("#" + globalLastClickedAnchor.selectorId).closest("li").addClass("active");
-            }
-            else
-            {
-                $("#" + globalLastClickedAnchor.selectorId).closest("li").addClass("active");
             }
 
+            $("#" + globalLastClickedAnchor.selectorId).closest("li").addClass("active");
         }
 
         $(".sidebar-menu li a").click(function () {
