@@ -1,0 +1,28 @@
+
+# MSTest test Results
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+
+# Package by Vaibhav to Prevent Nuget Package Errors on clone repository
+ParcelVision/packages/*
+!ParcelVision/packages/.gitkeep
+
+# User-specific files
+*.user
+*.sln.docstates
+*.csproj.FileListAbsolute.txt
+*.data
+*.rdl.data
+
+# Build results
+[Oo]bj/
+
+# Click-Once directory
+publish/
+
+# Publish Web Output
+*.Publish.xml
+*.pubxml
+
+
+ParcelVision/ParcelVision.WebUI/logs/
