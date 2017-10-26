@@ -70,16 +70,12 @@
             <!-- /.box -->
         </div>
     </div>
-    <div class="row">
-        <div class="col-xs-12">
-            Normal Box Body
-        </div>
-    </div>
+    
     <div class="row">
         <div class="col-xs-12">
             <div class="box box-solid box-primary">
                 <div class="box-header with-border">
-                    <h3 class="box-title">Default Box Example</h3>
+                    <h3 class="box-title">Normal Div Box Example</h3>
                     <div class="box-tools pull-right">
                         <!-- Buttons, labels, and many other things can be placed here! -->
                         <!-- Here is a label for example -->
@@ -99,12 +95,8 @@
             </div>
         </div>
     </div>
-    <div class="row">
-        <div class="col-xs-12">
-            More Examples
-        </div>
-    </div>
-    <div class="row">
+   
+    <div class="row" id="SimulateDivLoadingAndCancelling">
         <div class="col-xs-6">
             <div class="box box-primary" data-widget="box-widget">
                 <div class="box-header">
@@ -116,11 +108,9 @@
                 </div>
                 <div class="box-body">
                     The body of the box
-                    <p></p><p></p><p></p><p><input type="button" value="Trigger Loading" onclick="$('#x1 .overlay').show()"/></p>
-                    <p><input type="button" value="Cancel Loading" onclick="$('#x1 .overlay').hide()" /></p>
-
+                    <p></p><p></p><p></p><p><input type="button" id="btnTriggerLoading" disabled="" value="Simulate Div Loading" onclick="$('#x1 .overlay').show();$('#btnTriggerLoading').prop('disabled', true);"/></p>
+                    <p><input type="button" value="Cancel Div Loading" onclick="$('#x1 .overlay').hide(); $('#btnTriggerLoading').prop('disabled', false);" /></p>
                 </div>
-
                 <div class="box-footer">
                     <p></p>The footer of the box
                 </div>
@@ -151,4 +141,289 @@
         </div>
         
     </div>
+<div class="row" id="ActivityFeed-UserList">
+    <div class="col-xs-6">
+        <div class="box box-primary">
+            <div class="box-header with-border">
+                <h3 class="box-title">A sample activity feed</h3>
 
+                <div class="box-tools pull-right">
+                    <button type="button" class="btn btn-box-tool" data-widget="collapse">
+                        <i class="fa fa-minus"></i>
+                    </button>
+                    <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                </div>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+                <ul class="products-list product-list-in-box">
+                    <li class="item">
+                        <div class="product-img">
+                            <img src="/dist/img/default-50x50.gif" alt="Product Image">
+                        </div>
+                        <div class="product-info">
+                            <a href="javascript:void(0)" class="product-title">
+                                Samsung TV
+                                <span class="label label-warning pull-right">$1800</span>
+                            </a>
+                            <span class="product-description">
+                                Samsung 32" 1080p 60Hz LED Smart HDTV.
+                            </span>
+                        </div>
+                    </li>
+                    <!-- /.item -->
+                    <li class="item">
+                        <div class="product-img">
+                            <img src="/dist/img/default-50x50.gif" alt="Product Image">
+                        </div>
+                        <div class="product-info">
+                            <a href="javascript:void(0)" class="product-title">
+                                Bicycle
+                                <span class="label label-info pull-right">$700</span>
+                            </a>
+                            <span class="product-description">
+                                26" Mongoose Dolomite Men's 7-speed, Navy Blue.
+                            </span>
+                        </div>
+                    </li>
+                    <!-- /.item -->
+                    <li class="item">
+                        <div class="product-img">
+                            <img src="/dist/img/default-50x50.gif" alt="Product Image">
+                        </div>
+                        <div class="product-info">
+                            <a href="javascript:void(0)" class="product-title">Xbox One <span class="label label-danger pull-right">$350</span></a>
+                            <span class="product-description">
+                                Xbox One Console Bundle with Halo Master Chief Collection.
+                            </span>
+                        </div>
+                    </li>
+                    <!-- /.item -->
+                    <li class="item">
+                        <div class="product-img">
+                            <img src="/dist/img/default-50x50.gif" alt="Product Image">
+                        </div>
+                        <div class="product-info">
+                            <a href="javascript:void(0)" class="product-title">
+                                PlayStation 4
+                                <span class="label label-success pull-right">$399</span>
+                            </a>
+                            <span class="product-description">
+                                PlayStation 4 500GB Console (PS4)
+                            </span>
+                        </div>
+                    </li>
+                    <!-- /.item -->
+                </ul>
+            </div>
+            <!-- /.box-body -->
+            <div class="box-footer text-center">
+                <a href="javascript:void(0)" class="uppercase">View All Products</a>
+            </div>
+            <!-- /.box-footer -->
+        </div>
+    </div>
+    <div class="col-xs-6">
+        <!-- USERS LIST -->
+        <div class="box box-danger">
+            <div class="box-header with-border">
+                <h3 class="box-title">Latest Members (Sample User Lists)</h3>
+
+                <div class="box-tools pull-right">
+                    <span class="label label-danger">8 New Members</span>
+                    <button type="button" class="btn btn-box-tool" data-widget="collapse">
+                        <i class="fa fa-minus"></i>
+                    </button>
+                    <button type="button" class="btn btn-box-tool" data-widget="remove">
+                        <i class="fa fa-times"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body no-padding">
+                <ul class="users-list clearfix">
+                    <li>
+                        <img src="/dist/img/user1-128x128.jpg" alt="User Image">
+                        <a class="users-list-name" href="#">Alexander Pierce</a>
+                        <span class="users-list-date">Today</span>
+                    </li>
+                    <li>
+                        <img src="/dist/img/user8-128x128.jpg" alt="User Image">
+                        <a class="users-list-name" href="#">Norman</a>
+                        <span class="users-list-date">Yesterday</span>
+                    </li>
+                    <li>
+                        <img src="/dist/img/user7-128x128.jpg" alt="User Image">
+                        <a class="users-list-name" href="#">Jane</a>
+                        <span class="users-list-date">12 Jan</span>
+                    </li>
+                    <li>
+                        <img src="/dist/img/user6-128x128.jpg" alt="User Image">
+                        <a class="users-list-name" href="#">John</a>
+                        <span class="users-list-date">12 Jan</span>
+                    </li>
+                    <li>
+                        <img src="/dist/img/user2-160x160.jpg" alt="User Image">
+                        <a class="users-list-name" href="#">Vaibhav</a>
+                        <span class="users-list-date">13 Jan</span>
+                    </li>
+                    <li>
+                        <img src="/dist/img/user5-128x128.jpg" alt="User Image">
+                        <a class="users-list-name" href="#">Sarah</a>
+                        <span class="users-list-date">14 Jan</span>
+                    </li>
+                    <li>
+                        <img src="/dist/img/user4-128x128.jpg" alt="User Image">
+                        <a class="users-list-name" href="#">Nora</a>
+                        <span class="users-list-date">15 Jan</span>
+                    </li>
+                    <li>
+                        <img src="/dist/img/user2-160x160.jpg" alt="User Image">
+                        <a class="users-list-name" href="#">Vaibhav</a>
+                        <span class="users-list-date">15 Jan</span>
+                    </li>
+                </ul>
+                <!-- /.users-list -->
+            </div>
+            <!-- /.box-body -->
+            <div class="box-footer text-center">
+                <a href="javascript:void(0)" class="uppercase">View All Users</a>
+            </div>
+            <!-- /.box-footer -->
+        </div>
+        <!--/.box -->
+    </div>
+</div>
+
+<h2 class="page-header">Custom Tabs</h2>
+<div class="row">
+    <div class="col-md-6">
+        <!-- Custom Tabs -->
+        <div class="nav-tabs-custom">
+            <ul class="nav nav-tabs">
+                <li class=""><a href="#tab_1" data-toggle="tab" aria-expanded="false">Tab 1</a></li>
+                <li class=""><a href="#tab_2" data-toggle="tab" aria-expanded="false">Tab 2</a></li>
+                <li class="active"><a href="#tab_3" data-toggle="tab" aria-expanded="true">Tab 3</a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">
+                        Dropdown <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+                        <li role="presentation" class="divider"></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+                    </ul>
+                </li>
+                <li class="pull-right"><a href="#" class="text-muted"><i class="fa fa-gear"></i></a></li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane" id="tab_1">
+                    <b>How to use:</b>
+
+                    <p>
+                        Exactly like the original bootstrap tabs except you should use
+                        the custom wrapper <code>.nav-tabs-custom</code> to achieve this style.
+                    </p>
+                    A wonderful serenity has taken possession of my entire soul,
+                    like these sweet mornings of spring which I enjoy with my whole heart.
+                    I am alone, and feel the charm of existence in this spot,
+                    which was created for the bliss of souls like mine. I am so happy,
+                    my dear friend, so absorbed in the exquisite sense of mere tranquil existence,
+                    that I neglect my talents. I should be incapable of drawing a single stroke
+                    at the present moment; and yet I feel that I never was a greater artist than now.
+                </div>
+                <!-- /.tab-pane -->
+                <div class="tab-pane" id="tab_2">
+                    The European languages are members of the same family. Their separate existence is a myth.
+                    For science, music, sport, etc, Europe uses the same vocabulary. The languages only differ
+                    in their grammar, their pronunciation and their most common words. Everyone realizes why a
+                    new common language would be desirable: one could refuse to pay expensive translators. To
+                    achieve this, it would be necessary to have uniform grammar, pronunciation and more common
+                    words. If several languages coalesce, the grammar of the resulting language is more simple
+                    and regular than that of the individual languages.
+                </div>
+                <!-- /.tab-pane -->
+                <div class="tab-pane active" id="tab_3">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                    when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    It has survived not only five centuries, but also the leap into electronic typesetting,
+                    remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
+                    sheets containing Lorem Ipsum passages, and more recently with desktop publishing software
+                    like Aldus PageMaker including versions of Lorem Ipsum.
+                </div>
+                <!-- /.tab-pane -->
+            </div>
+            <!-- /.tab-content -->
+        </div>
+        <!-- nav-tabs-custom -->
+    </div>
+    <!-- /.col -->
+
+    <div class="col-md-6">
+        <!-- Custom Tabs (Pulled to the right) -->
+        <div class="nav-tabs-custom">
+            <ul class="nav nav-tabs pull-right">
+                <li class="active"><a href="#tab_1-1" data-toggle="tab">Tab 1</a></li>
+                <li><a href="#tab_2-2" data-toggle="tab">Tab 2</a></li>
+                <li><a href="#tab_3-2" data-toggle="tab">Tab 3</a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        Dropdown <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+                        <li role="presentation" class="divider"></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+                    </ul>
+                </li>
+                <li class="pull-left header"><i class="fa fa-th"></i> Custom Tabs</li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane active" id="tab_1-1">
+                    <b>How to use:</b>
+
+                    <p>
+                        Exactly like the original bootstrap tabs except you should use
+                        the custom wrapper <code>.nav-tabs-custom</code> to achieve this style.
+                    </p>
+                    A wonderful serenity has taken possession of my entire soul,
+                    like these sweet mornings of spring which I enjoy with my whole heart.
+                    I am alone, and feel the charm of existence in this spot,
+                    which was created for the bliss of souls like mine. I am so happy,
+                    my dear friend, so absorbed in the exquisite sense of mere tranquil existence,
+                    that I neglect my talents. I should be incapable of drawing a single stroke
+                    at the present moment; and yet I feel that I never was a greater artist than now.
+                </div>
+                <!-- /.tab-pane -->
+                <div class="tab-pane" id="tab_2-2">
+                    The European languages are members of the same family. Their separate existence is a myth.
+                    For science, music, sport, etc, Europe uses the same vocabulary. The languages only differ
+                    in their grammar, their pronunciation and their most common words. Everyone realizes why a
+                    new common language would be desirable: one could refuse to pay expensive translators. To
+                    achieve this, it would be necessary to have uniform grammar, pronunciation and more common
+                    words. If several languages coalesce, the grammar of the resulting language is more simple
+                    and regular than that of the individual languages.
+                </div>
+                <!-- /.tab-pane -->
+                <div class="tab-pane" id="tab_3-2">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                    when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    It has survived not only five centuries, but also the leap into electronic typesetting,
+                    remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
+                    sheets containing Lorem Ipsum passages, and more recently with desktop publishing software
+                    like Aldus PageMaker including versions of Lorem Ipsum.
+                </div>
+                <!-- /.tab-pane -->
+            </div>
+            <!-- /.tab-content -->
+        </div>
+        <!-- nav-tabs-custom -->
+    </div>
+    <!-- /.col -->
+</div>
