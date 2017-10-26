@@ -1,2 +1,2 @@
 # adminlteexample
-AdminLTE Example
+AdminLTE Example via MVC 5
